@@ -5,30 +5,25 @@ class MyColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Center(
-        child: ContainerWidgets()
-      ),
+    return Scaffold(
+      body: Center(child: TextColumn()),
     );
   }
 
- Widget TextColumn() {
+  Widget TextColumn() {
     return Column(
-         mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("data1"),
-            
-            Text("data2"),
-        
-            Text("data3"),
-        
-            ],
-        );
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Text("data1"),
+        Text("data2"),
+        Text("data3"),
+      ],
+    );
   }
 
-  Widget ContainerWidgets(){
+  Widget ContainerWidgets() {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.center,
 
       children: [
         Container(
@@ -55,7 +50,7 @@ class MyColumn extends StatelessWidget {
 
   Widget ButtonColumns() {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ElevatedButton(onPressed: () {}, child: Text("Button one!")),
         ElevatedButton(onPressed: () {}, child: Text("Button one!")),

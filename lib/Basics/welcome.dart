@@ -5,6 +5,19 @@ class Welcome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(96, 172, 234, 1),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center ,
+        children: [
+          Center(child: Text("Welcom to my session!s")),
+          ElevatedButton(onPressed: 
+        (){
+          print("clicking button!");
+        }
+          , child: Text("Click me!")),
+        ],
+      ),
+    );
   }
 }

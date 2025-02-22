@@ -12,7 +12,7 @@ class MyContainer extends StatelessWidget {
     return Container(
       height: 200,
       width: 200,
-      color: Colors.orange,
+      color: Colors.red,
     );
   }
 
@@ -21,9 +21,17 @@ class MyContainer extends StatelessWidget {
       height: 200,
       width: 200,
       decoration: BoxDecoration(
-          // color: Colors.orange,
-          borderRadius: BorderRadius.circular(20),
-          gradient: LinearGradient(colors: [Colors.red, Colors.orange])),
+        color: Colors.red,
+        borderRadius: BorderRadius.horizontal(
+          left: Radius.circular(20),
+          // right: Radius.circular(20),
+        ),
+        
+      ),
+      // decoration: BoxDecoration(
+      //     // color: Colors.orange,
+      //     borderRadius: BorderRadius.circular(10),
+      //     gradient: LinearGradient(colors: [Colors.red, Colors.orange])),
     );
   }
 
@@ -45,9 +53,15 @@ class MyContainer extends StatelessWidget {
                 width: 70,
               ),
             ),
-          ), 
-          const Text("Cat cathingon!", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),), 
-          const Text("21",  style: TextStyle(fontSize: 16,))
+          ),
+          const Text(
+            "Cat cathingon!",
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          ),
+          const Text("21",
+              style: TextStyle(
+                fontSize: 16,
+              ))
         ],
       ),
     );

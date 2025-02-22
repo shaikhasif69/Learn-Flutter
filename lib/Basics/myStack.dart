@@ -14,12 +14,14 @@ class MyStack extends StatelessWidget {
             child: Container(
               width: 200,
               height: 200,
-              color: Colors.amber,
+              color: Colors.blue,
             ),
           ),
           Positioned(
             top: 30, // Slightly shifted down
             left: 30, // Slightly shifted to the right
+            right: 30,
+            bottom: 30,
             child: Container(
               width: 200,
               height: 200,

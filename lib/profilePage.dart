@@ -19,7 +19,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('CSI Profile'),
+        title: const Text('MY Profile'),
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
@@ -36,7 +36,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                 child: Image.asset('images/catProfile.jpg', fit: BoxFit.cover),
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 16, width: 10,),
 
             // User Name
             const Text(
@@ -60,7 +60,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
             const SizedBox(height: 16),
 
             // Info Section (like email, location)
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Icon(Icons.email, color: Colors.blueAccent),
