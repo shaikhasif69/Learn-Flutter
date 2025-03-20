@@ -14,6 +14,7 @@ import 'package:learn_flutter/SimpleUIs/simpleLoginPage.dart';
 import 'package:learn_flutter/SimpleUIs/simpleNavigation.dart';
 import 'package:learn_flutter/SimpleUIs/simpleState.dart';
 import 'package:learn_flutter/backend/backendPage.dart';
+import 'package:learn_flutter/functionalWidgets/mainFunctionalNavigator.dart';
 import 'package:learn_flutter/learn1.dart';
 import 'package:learn_flutter/profilePage.dart';
 import 'package:learn_flutter/reusableWidgets.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         // home: MyStack()
-        home: ReusableWidgets(widgetToShow: "BottomNavBar",));
+        // home: ReusableWidgets(widgetToShow: "SimpleGridView",));
+        home: const MyColumn());
   }
 }
