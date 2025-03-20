@@ -6,7 +6,7 @@ class MyColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: TextColumn()),
+      body:Center(child: TextColumn()),
     );
   }
 
@@ -33,6 +33,9 @@ class MyColumn extends StatelessWidget {
           child: Text("Container 1"),
         ),
         Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20)
+          ),
           height: 200,
           width: 200,
           color: Colors.orange,
